@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="CadastroEventosApp1.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:CadastroEventosApp1.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.NavBarIsVisible="False">
+
+    
+    <ShellContent
+        Title="Cadastro"
+        ContentTemplate="{DataTemplate views:CadastroEventoPage}"
+        Route="CadastroEventoPage" />
+
+</Shell>

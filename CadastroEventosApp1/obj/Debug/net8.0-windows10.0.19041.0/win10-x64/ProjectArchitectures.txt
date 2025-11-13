@@ -1,0 +1,1 @@
+C:\Users\ropea\source\repos\CadastroEventosApp1\CadastroEventosApp1\CadastroEventosApp1.csproj;x64

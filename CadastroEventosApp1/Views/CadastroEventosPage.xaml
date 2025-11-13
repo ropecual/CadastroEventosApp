@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CadastroEventosApp1.Views.CadastroEventoPage"
+             Title="Cadastro de Evento"
+             BackgroundColor="{StaticResource Gray100}">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label Text="Cadastro de Evento"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="{StaticResource Primary}"
+                   HorizontalOptions="Center" />
+
+            <Frame CornerRadius="10" Padding="15" BackgroundColor="White" HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+
+                    <Label Text="Nome do Evento:" />
+                    <Entry x:Name="txtNome" Placeholder="Ex: Conferência de Tecnologia" TextColor="{StaticResource Gray950}" />
+
+                    <Label Text="Local do Evento:" />
+                    <Entry x:Name="txtLocal" Placeholder="Ex: Centro de Convenções" TextColor="{StaticResource Gray950}" />
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame CornerRadius="10" Padding="15" BackgroundColor="White" HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Data de Início:" />
+                    <DatePicker x:Name="dpInicio" Format="dd/MM/yyyy" TextColor="{StaticResource Gray950}" />
+
+                    <Label Text="Data de Término:" />
+                    <DatePicker x:Name="dpTermino" Format="dd/MM/yyyy" TextColor="{StaticResource Gray950}" />
+                </VerticalStackLayout>
+            </Frame>
+
+        
+            <Frame CornerRadius="10" Padding="15" BackgroundColor="White" HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Número de Participantes:" />
+                    <Entry x:Name="txtParticipantes" Keyboard="Numeric" Placeholder="Ex: 150" TextColor="{StaticResource Gray950}" />
+
+                    <Label Text="Custo por Participante (R$):" />
+                    <Entry x:Name="txtCusto" Keyboard="Numeric" Placeholder="Ex: 75.50" TextColor="{StaticResource Gray950}" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button Text="Ver Resumo do Evento"
+                    Clicked="BtnResumo_Clicked"
+                    CornerRadius="25"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Fill"
+                    Margin="0,10,0,0" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
